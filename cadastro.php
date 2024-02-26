@@ -17,7 +17,7 @@
                         <h2>Faça seu cadastro</h2>
                     </div>
                     <div class="mb-4">
-                        <p><a class="link" href="login.php">Já tem uma conta? Faça login</a></p>
+                        <p><a class="link" href="index.html">Já tem uma conta? Faça login</a></p>
                     </div>
                     <form action="usuario.php" method="post" class="needs-validation " novalidate>
                         <div class="mb-2 col-sm-12">

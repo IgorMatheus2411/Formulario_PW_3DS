@@ -17,7 +17,7 @@
         <div class="row justify-content-center">
             <h1>BEM VINDO AMIGÃO!!!!!!!!!</h1>
         </div>
-        <form action="login.php" method="post" >
+        <form action="index.html" method="post" >
             <div class="mb-4">
                 <button type="submit" class="btn btn-primary">Voltar</button>
             </div>
