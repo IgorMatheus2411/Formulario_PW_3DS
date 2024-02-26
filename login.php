@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="estilo.css">
+        <title>Login</title>
+    </head>
+    <body background="img/capa.jpg">
+        <div class="container mt-5 rounded-4 col-sm-4 p-0 formulario">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="mb-2 mt-3 ">
+                        <h2>Entrar</h2>
+                    </div>
+                    <div class="mb-4">
+                        <p><a class="link" href="cadastro.php">Novo aqui? Cadastre-se</a></p>
+                    </div>
+                    <form action="usuario.php" method="post" class="needs-validation " novalidate>
+                        <div class="mb-2 col-sm-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Seu email" required>
+                        </div>
+                        <div class="mb-1 col-sm-12">
+                            <label for="password" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="password" placeholder="Sua senha" required> 
+                        </div>
+                        <div class="mb-4">
+                            <p><a class="link" href="recuperarSenha.php">Recuperar senha</a></p>
+                        </div>
+                        <div class="mb-4">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+<!-- justify-content-center -->
+        <script>
+            (() => {
+                'use strict'
+                const forms = document.querySelectorAll('.needs-validation')
+                Array.from(forms).forEach(form => {
+                    form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                    }, false)
+                })
+            })()
+
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    </body>
+
+</html>
